@@ -37,8 +37,8 @@ export default function Hero() {
       >
         {/* Badge */}
         <div className="bg-white/10 rounded-full px-4 py-2">
-          <span className="text-purple-light text-[16px] font-semibold leading-[20px]">
-            One word
+          <span className="text-[#C29CFF] text-[16px] font-semibold leading-[20px]">
+            Unlimited supply
           </span>
         </div>
 
