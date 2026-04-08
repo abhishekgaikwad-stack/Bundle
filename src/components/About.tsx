@@ -57,11 +57,11 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           viewport={{ once: true, margin: "-80px" }}
         >
-          <div className="w-[48px] h-[48px] shrink-0">
+          <div className="w-[48px] h-[48px] max-md:w-[32px] max-md:h-[32px] shrink-0">
             <img src="/SVG/Left.svg" alt="" className="w-full h-full" />
           </div>
-          <div className="flex-1 h-[48px] bg-dark" />
-          <div className="w-[48px] h-[48px] shrink-0">
+          <div className="flex-1 h-[48px] max-md:h-[32px] bg-dark" />
+          <div className="w-[48px] h-[48px] max-md:w-[32px] max-md:h-[32px] shrink-0">
             <img src="/SVG/Right.svg" alt="" className="w-full h-full" />
           </div>
         </motion.div>

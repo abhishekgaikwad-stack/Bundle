@@ -49,7 +49,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-white text-[14px] font-medium leading-[18px] text-center mt-[24px] max-w-[666px]">
-          Deploy once, and it handles your daily tasks around the clock, even while you sleep.
+          Your complete gaming setup, simplified.
         </p>
 
         {/* CTA Button */}

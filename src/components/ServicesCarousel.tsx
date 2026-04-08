@@ -2,62 +2,38 @@
 
 import { motion, useMotionValue, animate } from "motion/react";
 import { useRef, useState, useEffect } from "react";
+import { Icon } from "@iconify/react";
 
 const services = [
   {
     title: "High stock",
     desc: "We constantly keep overstock of merchandise as our clients usually find what they need!",
-    icon: (
-      <>
-        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-        <line x1="12" y1="22.08" x2="12" y2="12" />
-      </>
-    ),
+    icon: "hugeicons:chart-02",
   },
   {
     title: "Fast delivery",
     desc: "Our high reliable storage facility ensures the delivery of your orders in a very short time!",
-    icon: (
-      <>
-        <circle cx="12" cy="12" r="10" />
-        <polyline points="12 6 12 12 16 14" />
-      </>
-    ),
+    icon: "hugeicons:flash",
   },
   {
     title: "Best quality",
     desc: "We focus to the quality of our merchandise to ensure the best quality for our clients!",
-    icon: (
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-    ),
+    icon: "hugeicons:star-circle",
   },
   {
     title: "Quick support",
     desc: "Our team is available via Skype or email anytime in case of need or suggestions!",
-    icon: (
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-    ),
+    icon: "hugeicons:customer-support",
   },
   {
     title: "Best deals",
     desc: "the best deals are designed to outshine rivals\u2014giving you maximum value at unbeatable prices",
-    icon: (
-      <>
-        <line x1="12" y1="1" x2="12" y2="23" />
-        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-      </>
-    ),
+    icon: "hugeicons:money-bag-02",
   },
   {
     title: "API orders",
     desc: "Our customers can order via API over 1000 different products, always available!",
-    icon: (
-      <>
-        <polyline points="16 18 22 12 16 6" />
-        <polyline points="8 6 2 12 8 18" />
-      </>
-    ),
+    icon: "hugeicons:flow-connection",
   },
 ];
 
@@ -132,18 +108,7 @@ export default function ServicesCarousel() {
             viewport={{ once: true }}
           >
             <div className="w-[48px] h-[48px] bg-gray-dark rounded-[12px] flex items-center justify-center mb-[24px]">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#808080"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {service.icon}
-              </svg>
+              <Icon icon={service.icon} width={24} height={24} className="text-[#BFEB66]" />
             </div>
             <h3 className="text-white text-[24px] font-semibold leading-[28px] tracking-[-0.96px] mb-[8px]">
               {service.title}
@@ -177,18 +142,7 @@ export default function ServicesCarousel() {
             style={{ width: containerWidth }}
           >
             <div className="w-[48px] h-[48px] bg-gray-dark rounded-[12px] flex items-center justify-center mb-[24px]">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#808080"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                {service.icon}
-              </svg>
+              <Icon icon={service.icon} width={24} height={24} className="text-[#BFEB66]" />
             </div>
             <h3 className="text-white text-[24px] font-semibold leading-[28px] tracking-[-0.96px] mb-[8px]">
               {service.title}
